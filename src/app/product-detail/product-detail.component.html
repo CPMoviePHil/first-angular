@@ -1,0 +1,12 @@
+<p>
+product-detail works!
+</p>
+<div *ngIf="productz">
+  <h3>{{productz.name}}</h3>
+  <label>{{productz.description}}</label>
+  <h4>{{productz.price|currency}}</h4>
+  <button (click)='prodTocart(productz)'>Buy</button>
+  <br/>
+  <br/>
+  <button (click)='showMeTheCart()'>Show Me whats's in the Cart</button>
+</div>
